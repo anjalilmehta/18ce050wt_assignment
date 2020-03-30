@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript" src="valid.js"></script>
+	<h1>National Workshop on Web Technology</h1>
+	<form name="form" onsubmit="validation()" action="database.php" method="post">
+		<h2>Registration Form</h2>
+
+		<label for="fname">First Name<mark>*</mark></label>
+		<input type="text" placeholder="First Name" id="fname" name="fname">
+
+		<label for="lname">Last Name<mark>*</mark></label>
+		<input type="text" placeholder="Last Name" id="lname" name="lname">
+
+		<div>
+			<input type="radio" id="male" name="gender" value="M"><label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="F"><label for="female">Female</label>
+			<input type="radio" id="other" name="gender" value="O"><label for="other">Other</label>
+		</div>
+
+		<label for="email">Email<mark>*</mark></label>
+		<input type="email" placeholder="Email" name="email" id="email" onblur="emailCheck()">
+
+		<label for="collegename">College Name<mark>*</mark></label>
+		<input type="text" placeholder="College Name" id="collegename" name="collegename">
+
+		<label for="coursename">Course Name<mark>*</mark></label>
+		<input type="text" placeholder="Course Name" id ="coursename" name="coursename">
+
+		<label for="position">Post<mark>*</mark></label>
+        <select name="position" id="position">
+        	<option selected hidden value="Choose">Choose</option>
+            <option value="Student"> Student </option>
+            <option value="Faculty"> Faculty </option>     
+            <option value="Representative"> Representative </option>
+            <option value="Other"> Other </option>
+        </select>
+
+        <label for="birthdate">Birthdate<mark>*</mark></label>
+        <input type="date" id="birthdate" name="bdate">
+
+        <label for="phone">Phone<mark>*</mark></label>
+        <input type="tel" id="phone" name="phno" placeholder="Phone No">
+
+		<input type="submit" name="Submit" value="Submit">
+	</form>
+</body>
+</html>

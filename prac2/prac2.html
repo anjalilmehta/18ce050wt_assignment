@@ -1,0 +1,170 @@
+<html>
+<title>CSPIT</title>
+
+<style>
+
+th{
+  background-color: #05386B;
+  color: white;
+}
+
+tr{
+  background-color: #8EE4AF;
+  color: #05386B;
+
+}
+
+tr:hover{
+  background-color: #5CDB95;
+  color: #05386B;
+}
+
+a{
+  color: #05386B;
+}
+a:visited{
+  color: #05386B;
+}
+
+a:hover{
+  color: #EDF5E1;
+}
+
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header logo"
+    "nav article article"
+    "nav footer footer";
+  grid-template-rows: 130px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  
+  }
+#pageHeader {
+  grid-area: header;
+  align-content: center;
+  background-color: red;
+
+
+  }
+#pageFooter {
+  grid-area: footer;
+  
+  background-color: #cce6ff;
+  text-align: center;
+  }
+#mainArticle { 
+  grid-area: article;  
+  background-color: #8EE4AF;
+  text-align: center; 
+  align-content: center;
+  
+  }
+#mainNav { 
+  grid-area: nav;
+  background-color:  #cce6ff;
+  }
+#logo { 
+  grid-area: logo; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "logo"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+</style>
+<body>
+  
+  <header id="pageHeader">
+    <sec style="font-family: Bookman; color: #05386B">
+  <b><u><h1><center>
+    CHANDUBHAI S PATEL INSTITUTE OF TECHNOLOGY
+  </center></h1></u></b></sec>
+  </header>
+
+
+  <article id="mainArticle">
+    
+    <table border="1" style="width: 100%">
+    <tr>
+      <th>No</td>
+      <th>Course Code</th>
+      <th>Course Name</th>
+      <th>Faculty Name</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>CE245</td>
+      <td>Data Structure And Algorithm</td>
+      <td>VHK</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CE246</td>
+      <td>Database Management System</td>
+      <td>APC,AJS</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CE247</td>
+      <td>Web Technologies</td>
+      <td>CMB</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>CE248</td>
+      <td>Operating System</td>  
+      <td>RNP</td>   
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>CE256</td>
+      <td>Computer Organization</td>
+      <td>RPP,MCM</td>
+    </tr>
+
+    </table>
+
+  </article>
+  
+  <nav id="mainNav">
+    
+    <h2><a href="main.html" target=""> HOME</a></h2>
+      <h3><ul type="disc">
+        <li><a href="courses.html" target="">Courses</a></li>
+        <li><a href="dept.html" target="">Departments</a></li>
+        <li><a href="faculty.html" target="">Faculties</a></li>
+        <li><a href="lib.html" target="">Libraries</a></li>
+	<li><a href="time_table.html" target="">Timetable</a></li>
+	<li><a href="resume.html" target="">Resume</a></li>
+	<li><a href="feedback_form.html" target="">Feedback form</a></li>
+	<li><a href="hometown1.html" target="">hometown</a></li>
+      </ul>
+      </h3>
+  </nav>
+  <div id="logo">
+    
+    <img src="charusat_logo.jpg " height="100%" width="100%">
+  </div>
+  <footer id="pageFooter">All rights reserved<br>
+    Charusat University 2000-2020
+
+  </footer>
+</body>
+
+</html>
